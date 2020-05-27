@@ -1,0 +1,61 @@
+body{
+    background-image: url("background.jpg");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 50px;
+}
+
+table{
+    background-color: white;
+    padding: 5px;
+    border-spacing: 3px;
+    margin: auto;   
+}
+
+td{
+    background-color: white;
+    text-align: center;
+}
+
+button{
+    background-color: purple;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    width: 100px;
+    height: 70px;
+    outline-color: purple;
+    border-radius: 10%;
+}
+
+/********************************************ID TAGS***************************************/
+
+#solutions{
+    height: 70px;
+}
+
+#solution{
+    background-color: purple;
+    text-align: right;
+    color: yellow;
+    border-radius: 2%;
+}
+
+#backspace{
+    height: 40px;
+    margin-top: 10px;
+}
+
+/********************************************HOVER TAGS***************************************/
+
+
+td:hover, button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    background-color: rgb(246, 0, 246);
+    border: none;
+}

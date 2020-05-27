@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="cal.css">
+
+</head>
+<body>
+    <table>
+        <tr id ="solutions">
+            <td colspan="4" id="solution">0</td>
+        </tr>
+        <tr>
+            <td><button onclick="performs('%')" class="">%</button></td>
+            <td><button onclick="performs('+')" class="">+</button></td>
+            <td><button onclick="performs('-')" class="">-</button></td>
+            <td><button onclick="performs('c')" class=""><b>C</b></button></td>
+        </tr>
+        <tr>
+            <td><button onclick="show('1')" class="num">1</button></td>
+            <td><button onclick="show('2')" class="num">2</button></td>
+            <td><button onclick="show('3')" class="num">3</button></td>
+            <td><button onclick="backspace()" class=""><img id="backspace" src="backspace.png"></button></td>
+        </tr>
+        <tr>
+            <td><button onclick="show('4')" class="num">4</button></td>
+            <td><button onclick="show('5')" class="num">5</button></td>
+            <td><button onclick="show('6')" class="num">6</button></td>
+            <td><button onclick="performs('*')" class="">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="show('7')" class="num">7</button></td>
+            <td><button onclick="show('8')" class="num">8</button></td>
+            <td><button onclick="show('9')" class="num">9</button></td>
+            <td><button onclick="performs('/')" class="">/</button></td>
+
+        </tr>
+        <tr>
+            <td><button onclick="performs('*', -1)" class="">+/-</button></td>
+            <td><button onclick="show('0')" class="num">0</button></td>
+            <td><button onclick="performs('.')" class="">.</button></td>
+            <td><button onclick="equal()" class="">=</button></td>
+        </tr>
+    </table>
+    <div id="ans"> Ans = </div>
+    <div id="num1"> Num1 = </div>
+    <div id="num2"> Num2 = </div>
+    <div id="opAv"> Operator = </div>
+    <!-- <div id="extra"></div> -->
+    <script src="cal.js"></script>
+</body>
+</html>
