@@ -10,7 +10,8 @@ table{
     background-color: white;
     padding: 5px;
     border-spacing: 3px;
-    margin: auto;   
+    margin: auto;
+    margin-top: 50px;
 }
 
 td{
@@ -19,14 +20,14 @@ td{
 }
 
 button{
-    background-color: purple;
+    background-color: rgb(163, 0, 163);
     border: none;
     color: white;
     text-align: center;
     font-size: 30px;
     width: 100px;
-    height: 70px;
-    outline-color: purple;
+    height: 85px;
+    outline: none;
     border-radius: 10%;
 }
 
@@ -48,14 +49,32 @@ button{
     margin-top: 10px;
 }
 
+#xor{
+    font-size: 12px;
+    margin:0px;
+    padding: 0px;
+}
+
+/********************************************CLASS TAGS***************************************/
+
+.num{
+    background-color: rgb(200, 0, 200);
+    /* font-weight: bold; */
+}
+
+.sqrt{
+    border: none;
+    margin: 0px;
+}
+
 /********************************************HOVER TAGS***************************************/
 
-
-td:hover, button:hover{
+button:hover{
     cursor: pointer;
+    background-color: rgb(115, 0, 115);
 }
 
 button:active{
-    background-color: rgb(246, 0, 246);
+    background-color: rgb(150, 0, 150);
     border: none;
 }
