@@ -99,12 +99,12 @@ function show(x){
     }
     ans = num1+num2;
     document.getElementById('solution').innerHTML = ans;
-    document.getElementById('ans').innerHTML = " Ans = " + ans;
-    document.getElementById('num1').innerHTML = " Num1 = " + num1;
-    document.getElementById('num2').innerHTML = "Num2 = " + num2;
-    document.getElementById('opAv').innerHTML = "Operator = " + opAvailable;
-    document.getElementById('dot1').innerHTML = "DotNum1 = " + dotNum1;
-    document.getElementById('dot2').innerHTML = "DotNum2 = " + dotNum2;
+    // document.getElementById('ans').innerHTML = " Ans = " + ans;
+    // document.getElementById('num1').innerHTML = " Num1 = " + num1;
+    // document.getElementById('num2').innerHTML = "Num2 = " + num2;
+    // document.getElementById('opAv').innerHTML = "Operator = " + opAvailable;
+    // document.getElementById('dot1').innerHTML = "DotNum1 = " + dotNum1;
+    // document.getElementById('dot2').innerHTML = "DotNum2 = " + dotNum2;
 }
 
 function performs(op, x){
@@ -162,12 +162,12 @@ function performs(op, x){
         document.getElementById('solution').innerHTML = "0";
     }
     
-    document.getElementById('ans').innerHTML = " Ans = " + ans;
-    document.getElementById('num1').innerHTML = " Num1 = " + num1;
-    document.getElementById('num2').innerHTML = "Num2 = " + num2;
-    document.getElementById('opAv').innerHTML = "Operator = " + opAvailable;
-    document.getElementById('dot1').innerHTML = "DotNum1 = " + dotNum1;
-    document.getElementById('dot2').innerHTML = "DotNum2 = " + dotNum2;
+    // document.getElementById('ans').innerHTML = " Ans = " + ans;
+    // document.getElementById('num1').innerHTML = " Num1 = " + num1;
+    // document.getElementById('num2').innerHTML = "Num2 = " + num2;
+    // document.getElementById('opAv').innerHTML = "Operator = " + opAvailable;
+    // document.getElementById('dot1').innerHTML = "DotNum1 = " + dotNum1;
+    // document.getElementById('dot2').innerHTML = "DotNum2 = " + dotNum2;
 }
 
 function backspace(){
@@ -206,12 +206,12 @@ function backspace(){
     else{
         document.getElementById('solution').innerHTML = "0";
     }
-    document.getElementById('ans').innerHTML = " Ans = " + ans;
-    document.getElementById('num1').innerHTML = " Num1 = " + num1;
-    document.getElementById('num2').innerHTML = "Num2 = " + num2;
-    document.getElementById('opAv').innerHTML = "Operator = " + opAvailable;
-    document.getElementById('dot1').innerHTML = "DotNum1 = " + dotNum1;
-    document.getElementById('dot2').innerHTML = "DotNum2 = " + dotNum2;
+    // document.getElementById('ans').innerHTML = " Ans = " + ans;
+    // document.getElementById('num1').innerHTML = " Num1 = " + num1;
+    // document.getElementById('num2').innerHTML = "Num2 = " + num2;
+    // document.getElementById('opAv').innerHTML = "Operator = " + opAvailable;
+    // document.getElementById('dot1').innerHTML = "DotNum1 = " + dotNum1;
+    // document.getElementById('dot2').innerHTML = "DotNum2 = " + dotNum2;
 }
 function equal(){
 //needs improvement for s(square) - symbol for square
@@ -267,10 +267,10 @@ function equal(){
     dotNum2 = false;
     opAvailable = false;
     document.getElementById('solution').innerHTML = ans;
-    document.getElementById('ans').innerHTML = " Ans = " + ans;
-    document.getElementById('num1').innerHTML = " Num1 = " + num1;
-    document.getElementById('num2').innerHTML = "Num2 = " + num2;
-    document.getElementById('opAv').innerHTML = "Operator = " + opAvailable;
-    document.getElementById('dot1').innerHTML = "DotNum1 = " + dotNum1;
-    document.getElementById('dot2').innerHTML = "DotNum2 = " + dotNum2;
+    // document.getElementById('ans').innerHTML = " Ans = " + ans;
+    // document.getElementById('num1').innerHTML = " Num1 = " + num1;
+    // document.getElementById('num2').innerHTML = "Num2 = " + num2;
+    // document.getElementById('opAv').innerHTML = "Operator = " + opAvailable;
+    // document.getElementById('dot1').innerHTML = "DotNum1 = " + dotNum1;
+    // document.getElementById('dot2').innerHTML = "DotNum2 = " + dotNum2;
 }
