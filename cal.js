@@ -49,6 +49,12 @@ document.addEventListener('keydown', function(event){
     else if(event.key == 'e'){
         show('e');
     }
+    else if(event.key == 'L'){
+        performs('L');
+    }
+    else if(event.key == 'l'){
+        performs('l');
+    }
 })
 
 function show(x){
@@ -70,7 +76,7 @@ function show(x){
         }
     }
     else{
-        if(num1.length == 1){
+        if((num1[0] != 's' && num1[0] != 'l' && num1[0] != 'L') && num1.length == 1){
             alert("Wrong format");
         }
         else if(num2 ==""){
@@ -136,8 +142,15 @@ function performs(op, x){
             equal();
         }
         opAvailable = true;
-        num1 = num1 + op;
-        
+        if(op == 'l'){
+            num1 = num1 + "log";
+        }
+        else if(op == 'L'){
+            num1 = num1 + "ln";
+        }
+        else{
+            num1 = num1 + op;
+        }
     }
 
     ans = num1+num2;
@@ -201,6 +214,8 @@ function backspace(){
     document.getElementById('dot2').innerHTML = "DotNum2 = " + dotNum2;
 }
 function equal(){
+//needs improvement for s(square) - symbol for square
+
     l = num1.length;
 
     if(opAvailable==false){
@@ -212,7 +227,12 @@ function equal(){
     }
     else if(num1[0] == 's'){
         ans = Math.sqrt(parseFloat(num2));
-        num1 = "";
+    }
+    else if(num1.slice(0,3) == "log"){
+        ans = Math.log10(num2);
+    }
+    else if(num1.slice(0.2) == 'ln'){
+        ans = Math.log(num2);
     }
     else if(num1[l-1] == '*'){
         ans = parseFloat(num1.slice(0,l)) * parseFloat(num2);
